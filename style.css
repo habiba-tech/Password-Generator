@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.password-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  width: 80%;
+  text-align: center;
+  outline: none;
+}
+
+button {
+  background: linear-gradient(90deg, #ff6a88, #ff99ac);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255,255,255,0.4);
+}
+
+#copyBtn {
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-left: 10px;
+  background: rgba(255,255,255,0.2);
+  font-size: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
